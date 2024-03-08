@@ -1,0 +1,158 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    text-align: right;
+    padding: 20px 10px;
+}
+
+
+nav .nav-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 50%;
+    outline: none;
+    padding: 8px;
+}
+
+nav .nav-icon:hover {
+    border-radius: 100%;
+    background-color: rgba(60, 64, 67, 0.08);
+}
+
+nav .nav-link {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+nav .nav-button{
+    background: #1a75e8;
+    border: 1px solid transparent;
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    padding: 9px 23px;
+    border-radius: 4px;
+}
+
+nav .nav-button:hover {
+    background: #2b7de9;
+    box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%),
+                0 1px 3px 1px rgb(66 133 244 / 15%)
+}
+
+/* Main */
+.google-logo {
+    padding: 10px 0;
+    height: 92px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+    padding: 50px;
+}
+
+.search-box {
+    width: 60vh;
+    height: 45px;
+    border: 1px solid lightgray;
+    border-radius: 23px;
+    display: flex;
+    align-items: stretch;
+}
+
+.search-input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    flex-grow: 1;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    color: #9aa0a6;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.google-mic {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.button {
+    width: 150px;
+    height: 36px;
+    border: transparent;
+    margin: 11px 4px;
+    padding 0 16px;
+    background-color: #f8f9fa;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    color: #3c4043;
+}
+
+.languages {
+    font-size: 0.8rem;
+    color: #3c4043;
+}
+
+.service-item {
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+/* Footer */
+footer .row {
+    color: #70757a;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    padding: 0 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+footer .row a {
+    text-decoration: none;
+    color: #70757a;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    footer .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+}
